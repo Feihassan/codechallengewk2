@@ -57,7 +57,6 @@ button[type="submit"]:hover {
   background: #2980b9;
 }
 
-/* Guest list */
 #guest-list {
   list-style: none;
 }
@@ -74,7 +73,6 @@ button[type="submit"]:hover {
   transition: all 0.3s ease;
 }
 
-/* Name and RSVP status */
 .guest-info {
   display: flex;
   justify-content: space-between;
@@ -83,7 +81,7 @@ button[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
-/* Buttons */
+
 .button-group {
   display: flex;
   gap: 10px;
@@ -115,7 +113,6 @@ button[type="submit"]:hover {
   background: #c0392b;
 }
 
-/* Tag style (future stretch: friend/family/colleague) */
 .tag {
   display: inline-block;
   font-size: 12px;
