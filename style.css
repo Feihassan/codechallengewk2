@@ -1,0 +1,189 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #c0d4b6;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #e05a5a;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 22px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  background: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #2980b9;
+}
+
+/* Guest list */
+#guest-list {
+  list-style: none;
+}
+
+#guest-list li {
+  display: flex;
+  flex-direction: column;
+  background: #ecf0f1;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Name and RSVP status */
+.guest-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rsvp-btn {
+  background: #27ae60;
+  color: white;
+}
+
+.rsvp-btn:hover {
+  background: #219150;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Tag style (future stretch: friend/family/colleague) */
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.tag.friend { 
+  background-color: #8e44ad; }
+.tag.family { 
+  background-color: #e67e22; }
+.tag.colleague { 
+  background-color: #16a085; }
+.timestamp { 
+  font-size: 12px; color: #555; margin-top: 5px; font-style: italic; }
+
+input[type="text"] {
+  ...
+  width: 100%; /* add this */
+}
+
+select {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%; /* new */
+}
+/* Responsive layout */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  select,
+  button[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .guest-info {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .tag,
+  .timestamp {
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Guest List Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Event Guest List</h1>
+
+    <form id="guest-form">
+      <input type="text" id="guest-name" placeholder="Enter guest name" required />
+      <select id="guest-category" required>
+        <option value="">Select Category</option>
+        <option value="friend">Friend</option>
+        <option value="family">Family</option>
+        <option value="colleague">Colleague</option>
+      </select>
+      <button type="submit">Add Guest</button>
+    </form>
+
+    <ul id="guest-list">
+      <li>
+        <div class="guest-info">
+          <span>ibrahim - Attending</span>
+        </div>
+        <div class="button-group">
+          <button class="rsvp-btn">Toggle RSVP</button>
+          <button class="delete-btn">Remove</button>
+        </div>
+        <span class="tag friend">Friend</span>
+        <span class="timestamp">Added at 10:45 AM</span>
+      </li>
+
+      <li>
+        <div class="guest-info">
+          <span>Najma - Attending</span>
+        </div>
+        <div class="button-group">
+          <button class="rsvp-btn">Toggle RSVP</button>
+          <button class="delete-btn">Remove</button>
+        </div>
+        <span class="tag family">Family</span>
+        <span class="timestamp">Added at 10:50 AM</span>
+      </li>
+
+      <li>
+        <div class="guest-info">
+          <span>abdii - Attending</span>
+        </div>
+        <div class="button-group">
+          <button class="rsvp-btn">Toggle RSVP</button>
+          <button class="delete-btn">Remove</button>
+        </div>
+        <span class="tag colleague">Colleague</span>
+        <span class="timestamp">Added at 10:45 AM</span>
+      </li>
+    </ul>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
